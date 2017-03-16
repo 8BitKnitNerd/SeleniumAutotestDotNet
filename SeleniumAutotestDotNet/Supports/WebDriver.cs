@@ -16,8 +16,8 @@ namespace SeleniumAutotestDotNet.Supports {
 		internal WebDriver() {
 			this.TestSupport = new TestSupport();
 			this.driver = this.TestSupport.StartBrowser(ConfigurationManager.AppSettings["client_browser"]);
-			this.driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(Int32.Parse(ConfigurationManager.AppSettings["waiting_time"])));
-		}
+            this.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(Int32.Parse(ConfigurationManager.AppSettings["waiting_time"]));
+        }
 
 		public IWebDriver Driver() {
 			return this.driver;
@@ -96,7 +96,7 @@ namespace SeleniumAutotestDotNet.Supports {
         }
 
 		internal void SetImplicitWaitToDefault() {
-			this.driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(Int32.Parse(ConfigurationManager.AppSettings["waiting_time"])));
+			this.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(Int32.Parse(ConfigurationManager.AppSettings["waiting_time"]));
 		}
 
 		internal void BrowserBackButton() {
