@@ -6363,30 +6363,6 @@
             are attempting to run the IE driver remotely, use <see cref="T:OpenQA.Selenium.Remote.RemoteWebDriver" />
             in conjunction with a standalone WebDriver server.</remarks>
     </member>
-    <member name="T:OpenQA.Selenium.IE.InternetExplorerDriverEngine">
-      <summary>
-            Represents the valid values for driver engine available with the IEDriverServer.exe.
-            </summary>
-    </member>
-    <member name="F:OpenQA.Selenium.IE.InternetExplorerDriverEngine.Legacy">
-      <summary>
-            Represents the Legacy value, forcing the driver to use only the open-source
-            driver engine implementation.
-            </summary>
-    </member>
-    <member name="F:OpenQA.Selenium.IE.InternetExplorerDriverEngine.AutoDetect">
-      <summary>
-            Represents the AutoDetect value, instructing the driver to use the vendor-provided
-            driver engine implementation, if available, falling back to the open-source
-            implementation, if it is not available.
-            </summary>
-    </member>
-    <member name="F:OpenQA.Selenium.IE.InternetExplorerDriverEngine.Vendor">
-      <summary>
-            Represents the Vendor value, instructing the driver to use the vendor-provided
-            driver engine implementation, and throwing an exception if it is not available.
-            </summary>
-    </member>
     <member name="T:OpenQA.Selenium.IE.InternetExplorerDriverLogLevel">
       <summary>
             Represents the valid values of logging levels available with the IEDriverServer.exe.
@@ -6469,11 +6445,6 @@
     <member name="P:OpenQA.Selenium.IE.InternetExplorerDriverService.LoggingLevel">
       <summary>
             Gets or sets the logging level used by the IEDriverServer.
-            </summary>
-    </member>
-    <member name="P:OpenQA.Selenium.IE.InternetExplorerDriverService.Implementation">
-      <summary>
-            Gets or sets the implementation to be used by the IEDriverServer.
             </summary>
     </member>
     <member name="P:OpenQA.Selenium.IE.InternetExplorerDriverService.LibraryExtractionPath">
