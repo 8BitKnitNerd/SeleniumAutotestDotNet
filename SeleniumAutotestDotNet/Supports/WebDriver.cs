@@ -129,7 +129,7 @@ namespace SeleniumAutotestDotNet.Supports {
 			}
 			Screenshot ss = ((ITakesScreenshot)this.driver).GetScreenshot();
 			string path = ConfigurationManager.AppSettings["ScreenshotPath"] + filename;
-			ss.SaveAsFile(path, ImageFormat.Png); //use any of the built in image formating
+			ss.SaveAsFile(path, ScreenshotImageFormat.Png);
 			TestContext.WriteLine("Screenshot saved to: " + path);
 		}
 	}
