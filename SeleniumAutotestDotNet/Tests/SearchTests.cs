@@ -24,7 +24,7 @@ namespace SeleniumAutotestDotNet.Tests {
         public void NumberOfSearchHits() {
             int ExpectedNumberOfHits = 1000000;
             StartPage.MakeSearch("8-bit knit nerd");
-            Assert.IsTrue(TestHelper.IntInRange(SearchResultsPage.GetNumberOfResults(), Convert.ToInt32(ExpectedNumberOfHits*0.7), Convert.ToInt32(ExpectedNumberOfHits *1.3)));
+            Assert.IsTrue(TestHelper.IntInRange(SearchResultsPage.GetNumberOfResults(), Convert.ToInt32(ExpectedNumberOfHits * 0.7), Convert.ToInt32(ExpectedNumberOfHits * 1.3)));
         }
 
         [Test]

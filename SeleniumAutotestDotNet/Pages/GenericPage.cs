@@ -16,7 +16,8 @@ namespace SeleniumAutotestDotNet.Pages {
             string fullUrl = "";
             if (type == "CMS") {
                 fullUrl = ConfigurationManager.ConnectionStrings["TestUrlCMS"] + url;
-            } else {
+            }
+            else {
                 fullUrl = ConfigurationManager.ConnectionStrings["TestUrl"] + url;
             }
             Browser.GoToPage(fullUrl);
